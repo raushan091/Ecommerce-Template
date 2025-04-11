@@ -5,7 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --main-bg-color: #fff;
+    --main-color: #ffffff;
+    --main-bg-color: #ffffff;
+   
 }
 
 
@@ -56,11 +58,63 @@ nav ul li a:hover{
 }
 .search{
     margin: 10px;
+    display: flex;
+    justify-content: center;
 }
 .search input{
     width: 450px;
     height: 20px;
+    border-radius: 5px
+}
+.btn{
+    margin: 0px 15px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    background-color: beige;
+    cursor: pointer;
 }
 main{
     min-height: calc(100vh - 7vh - 12vh);
+}
+.container{
+    background-color: var(--main-bg-color);
+}
+.ad{
+    background-color: var(--main-bg-color);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.ad img{
+    width: 95vw;
+    margin: 20px 20px;
+}
+.productCard{
+    background-color: var(--main-color);
+    margin: 40px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    
+
+}
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 10px 0px;
+    padding: 10px;
+
+   
+
+}
+.product{
+    display: grid;
+    text-align: center;
+}
+.product img{
+    width: 200px;
+
+
+
 }
